@@ -1,0 +1,3 @@
+#!/bin/sed -rf
+
+s/,/<\/td> <td>/g;s/^/\t <tr><td>/g;s/<td>/<td><p><a href="mailto:/4;s/$/<\/td><\/tr>/g;s/<\/td>/">Send email<\/a><\/p><\/td>/4;s/<p><a href="mailto:Почта">Send email<\/a><\/p>/Почта/;1s/^/<html>\n<table>\n<style type=\"text\/css\">table { border-collapse: collapse; } table { background-color:#ccccff; width: 100%; border: 4px double black; border-collapse: collapse; } th { text-align: left; background:#ccccff; padding: 5px; border: 3px double black;} td { padding: 5px; border: 3px double black; }<\/style>/;$a<\/table>\n<\/html>
